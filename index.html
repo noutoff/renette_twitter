@@ -1,259 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ribbitter</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/124/124021.png"/>
+    <title>Renette and Charles (@renettethefrog) / Ribbitter</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header id="main-header">
-        <div class="content">
-            <nav>
-                <ul>
-                    <li><img src="./images/home.svg" alt="Home" /> Home</li>
-                    <li>
-                        <img src="./images/notification.svg" alt="Notifications" /> Notifications
-                    </li>
-                    <li><img src="./images/messages.svg" alt="Messages" /> Messages</li>
-                </ul>
-            </nav>
-            <img src="./images/frog-face.png" alt="Logo Twitter" height="30" />
-            <div class="side">
-              <input type="text" placeholder="Search on Ribbitter" />
-                <img src="./images/renette.jpg" alt="Avatar" />
-                <button>Ribbit</button>
-            </div>
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      <!-- <i class="fab fa-twitter"></i> -->
+      <img style="height: 30px; margin-left: 20px; margin-top:20px" src="images/frog-face.png">
+        <div class="sidebarOption active">
+            <span class="material-icons">home</span>
+            <h2>Home</h2>
         </div>
-    </header>
-    <div class="banner">
-      <img src="./images/frogcapy.webp" alt="Banner" height="380"/>
-    </div>
-    <div class="bar">
-        <div class="content">
-            <ul>
-                <li class="active">
-                    <span>Tweets</span>
-                    <strong>1234</strong>
-                </li>
-                <li>
-                    <span>Followings</span>
-                    <strong></strong>
-                </li>
-                <li>
-                    <span>Followers</span>
-                    <strong>12</strong>
-                </li>
-                <li>
-                    <span>Tweets</span>
-                    <strong>1234</strong>
-                </li>
-                <li>
-                    <span>Favorites</span>
-                    <strong>50</strong>
-                </li>
-                <li>
-                    <span>Lists</span>
-                    <strong>12</strong>
-                </li>
-                <li>
-                    <span>Moments</span>
-                    <strong>10</strong>
-                </li>
-            </ul>
-            <div class="actions">
-                <button>Follow</button>
-                <img src="/images/more.svg" alt="More" />
-            </div>
+
+        <div class="sidebarOption">
+            <span class="material-icons">search</span>
+            <h2>Explore</h2>
         </div>
+
+        <div class="sidebarOption">
+            <span class="material-icons">notifications</span>
+            <h2>Notifications</h2>
+        </div>
+
+        <div class="sidebarOption">
+            <span class="material-icons">chat</span>
+            <h2>Message</h2>
+        </div>
+
+        <div class="sidebarOption">
+            <span class="material-icons">bookmark</span>
+            <h2>Bookmarks</h2>
+        </div>
+
+        <div class="sidebarOption">
+            <span class="material-icons">list</span>
+            <h2>List</h2>
+        </div>
+
+        <div class="sidebarOption">
+            <span class="material-icons">person</span>
+            <h2>Profile</h2>
+        </div>
+
+        <div class="sidebarOption">
+            <span class="material-icons">more_horiz</span>
+            <h2>More</h2>
+        </div>
+
+        <button id="btn-tweet">Ribbit</button>
     </div>
+    <!-- sidebar ends -->
 
-    <div class="wrapper-content content">
-        <aside class="profile">
-            <img class="avatar" src="./images/renette.jpg" alt="Renette" />
-            <h1>Renette and Charles</h1>
-            <span>@renettethefrog</span>
-            <p>Professionnal bonkers</p>
+    <!-- feed starts -->
+    <div class="feed">
 
-            <ul class="list">
-                <li>
-                    <img src="/images/Place.svg" alt="Place" /> Rio de Janeiro, Brazil
-                </li>
-                <li>
-                    <img src="/images/Website.svg" alt="Website" /> https://www.linkedin.com/in/rafael-prado-8a40b6132/
-                </li>
-                <li><img src="/images/Joined.svg" alt="Joined" /> April 2020</li>
-                <li>
-                    <img src="/images/Born.svg" alt="Born" /> Born the 4th of April 1995
-                </li>
-            </ul>
-            <div class="widget followers">
-                <strong><img src="/images/Followers.svg" alt="Followers" /> 200 followers
-            that you know</strong
-          >
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+      <!-- banner starts -->
+      <div class="banner">
+	<div class="banner_body">
+	  <div class="banner-name">
+	    Rennette and Charles
+	  </div>
+	  <div class="banner-tweets">
+	    45297 Tweets
+	  </div>
+	  <img class="banner-img" src="images/frogcapy.webp" alt="">
+	</div>
+      </div>
+      <!-- banner ends -->
+      
+      <!-- profile starts -->
+      <div class="profile">
+	<div class="profile_body">
+	  <img class="profile-avatar" src="./images/renette.jpg" alt="Renette" />
+	  <div class="profile-name">
+	    Renette and Charles
+	    <div class="profile-at">
+	      @renettethefrog
+	    </div>
+	  </div>
+	  <div class="profile-info">
+	    Just a frog and her capybara friend bonking the world.
+	  </div>
+	  <div class="profile-calendar">
+	  <svg viewBox="0 0 24 24" aria-hidden="true" class="calendar-icon"><g><path d="M19.708 2H4.292C3.028 2 2 3.028 2 4.292v15.416C2 20.972 3.028 22 4.292 22h15.416C20.972 22 22 20.972 22 19.708V4.292C22 3.028 20.972 2 19.708 2zm.792 17.708c0 .437-.355.792-.792.792H4.292c-.437 0-.792-.355-.792-.792V6.418c0-.437.354-.79.79-.792h15.42c.436 0 .79.355.79.79V19.71z"></path><circle cx="7.032" cy="8.75" r="1.285"></circle><circle cx="7.032" cy="13.156" r="1.285"></circle><circle cx="16.968" cy="8.75" r="1.285"></circle><circle cx="16.968" cy="13.156" r="1.285"></circle><circle cx="12" cy="8.75" r="1.285"></circle><circle cx="12" cy="13.156" r="1.285"></circle><circle cx="7.032" cy="17.486" r="1.285"></circle><circle cx="12" cy="17.486" r="1.285"></circle></g></svg>
+	  Joined XX/XX/XX
+	  </div>
+	  <div class="profile-following">
+	    <b style="color:black">1827</b> Following <b style="color:black; margin-left:20px">12</b> Followers
+	  </div>
+	  <nav>
+        <a href="" class="active"><div style="padding-top:16px; padding-bottom:16px">Tweets<div class="blue-thingy"></div></div></a>
+        <a href=""><div style="padding-top:16px; padding-bottom:16px">Tweets and replies</div></a>
+        <a href=""><div style="padding-top:16px; padding-bottom:16px">Medias</div></a>
+	<a href=""><div style="padding-top:16px; padding-bottom:16px">Likes</div></a>
+      </nav>
+	</div>
+      </div>
+
+      <!-- profile ends -->
+
+
+        <!-- post starts -->
+        <div class="post">
+            <div class="post-avatar">
+              <img src="images/renette.jpg" alt="">
+            </div>
+            <div class="post_body">
+              <div class="post-header">
+                <div class="post-header-username">
+                  Renette and Charles
+                  <span class="post-header-icon">
+                    <span class="material-icons">verified</span>@renettethefrog
+                  </span>
+                </div>
+              </div>
+              <div class="post-description">
+                <p>Hello hello</p>
+              </div>
+              <img class="post-image" src="images/frogcapy.webp" alt="">
+              <div class="post-options">
+		
+	      </div>
+	      <div class="actions">
+                <a href=""><img src="./images/chat-round.svg" alt="Comments" /> 101</a>
+                <a href=""><img src="./images/refresh-69.svg" alt="Retweet" /> 59</a>
+                <a href=""><img src="./images/heart-2.svg" alt="Like" /> 25</a>
+                <a href=""><img src="./images/email-83.svg" alt="Email" /> 13</a>
+                  </div>                    
+                </div>
+        </div>
+        <!-- post ends -->
+    </div>
+    <!-- feed ends -->
+    <!-- widget starts -->
+    <div class="widget">
+        <div class="widget-search-bar">
+            <span class="material-icons">
+                search
+                </span>
+            <input type="text" id="widget-search-bar-input" value="" placeholder="Search twitter">
+        </div>
+
+	<div class="widget-container">
+	  <h3> You might know </h3>
+	  <div class="who">
+	   <ul>
+             <li>
+               <div class="profile">
+                 <div class="info">
+		   <img src="./images/kant.png" alt="Avatar" />
+                   <div><strong>Kant Trus<br> <span>@kanttrusthenotcat</span></strong></div>
+                 </div>
+		 <div><button>Follow</button></div>
+               </div>
+             </li>
+             <li>
+               <div class="profile">
+
+                 <div class="info">
+		   <img src="/images/React.png" alt="Avatar" />
+                   <strong>Jaques Desorteils <br><span>@jaquesfrostbite</span></strong>
+                 </div>
+		 <div><button>Follow</button></div>
+               </div>
+             </li>
+             <li>
+               <div class="profile">
+
+                 <div class="info">
+		   <img src="/images/React-Native.png" alt="Avatar" />
+                   <strong>Goblinwitch<br><span>@thegoblinwitch</span></strong>
+                 </div>
+		 <div><button>Follow</button></div>
+               </div>
+             </li>
+           </ul>
+	   </div>
+	</div>
+	
+        <div class="widget-container">
+          <h3><b>Trends for you</b></h3>
+	  <div class="trend">
+	  <ul>
+            <li><span>#OrcCity</span></li>
+            <li><span>#eatenbyagiantmosquito</span></li>
+            <li><span>#Temperateforlife</span></li>
+            <li><span>#isawsaranrae</span></li>
           </ul>
+	  </div>
         </div>
-        <div class="widget images">
-          <strong
-            ><img src="/images/Images.svg" alt="Images" />300 Photos and Videos
-          </strong>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-        </aside>
-        <section class="timeline">
-            <nav>
-                <a href="" class="active">Tweets</a>
-                <a href="">Tweets and replies</a>
-                <a href="">Medias</a>
-            </nav>
 
-            <ul class="tweets">
-                <li>
-                    <img src="./images/renette.jpg" alt="Avatar" />
-                    <div class="info">
-                        <strong>Rafael Prado <span>@Rafael.Prado</span></strong>
-                        <p>
-                            React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
-                        </p>
-                        <div class="actions">
-                            <a href=""><img src="./images/chat-round.svg" alt="Comments" /> 101</a>
-                            <a href=""><img src="./images/refresh-69.svg" alt="Retweet" /> 59</a>
-                            <a href=""><img src="./images/heart-2.svg" alt="Like" /> 25</a>
-                            <a href=""><img src="./images/email-83.svg" alt="Email" /> 13</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="/images/Minha foto.jfif" alt="Avatar" />
-                    <div class="info">
-                        <strong>Rafael Prado <span>@Rafael.Prado</span></strong>
-                        <p>
-                            Build encapsulated components that manage their own state, then compose them to make complex UIs. Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
-                        </p>
-                        <div class="actions">
-                            <a href=""><img src="./images/chat-round.svg" alt="Comments" /> 105</a>
-                            <a href=""><img src="./images/refresh-69.svg" alt="Retweet" /> 55</a>
-                            <a href=""><img src="./images/heart-2.svg" alt="Like" /> 33</a>
-                            <a href=""><img src="./images/email-83.svg" alt="Email" /> 19</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="/images/Minha foto.jfif" alt="Avatar" />
-                    <div class="info">
-                        <strong>Rafael Prado <span>@Rafael.Prado</span></strong>
-                        <p>
-                            React components implement a render() method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by render() via this.props. JSX is optional and
-                            not required to use React. Try the Babel REPL to see the raw JavaScript code produced by the JSX compilation step.
-                        </p>
-                        <div class="actions">
-                            <a href=""><img src="./images/chat-round.svg" alt="Comments" /> 59</a>
-                            <a href=""><img src="./images/refresh-69.svg" alt="Retweet" /> 43</a>
-                            <a href=""><img src="./images/heart-2.svg" alt="Like" /> 38</a>
-                            <a href=""><img src="./images/email-83.svg" alt="Email" /> 10</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="/images/Minha foto.jfif" alt="Avatar" />
-                    <div class="info">
-                        <strong>Rafael Prado <span>@Rafael.Prado</span></strong>
-                        <p>
-                            In addition to taking input data (accessed via this.props), a component can maintain internal state data (accessed via this.state). When a component’s state data changes, the rendered markup will be updated by re-invoking render().
-                        </p>
-                        <div class="actions">
-                            <a href=""><img src="./images/chat-round.svg" alt="Comments" /> 100</a>
-                            <a href=""><img src="./images/refresh-69.svg" alt="Retweet" /> 40</a>
-                            <a href=""><img src="./images/heart-2.svg" alt="Like" /> 80</a>
-                            <a href=""><img src="./images/email-83.svg" alt="Email" /> 15</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <aside class="widgets">
-            <div class="widget follow">
-                <div class="title">
-                    <strong>Who to follow</strong>
-                    <a href="">Refresh</a>
-                    <a href="">Veiw all</a>
-                </div>
-                <ul>
-                    <li>
-                        <div class="profile">
-                            <img src="/images/nodejs_logo.png" alt="Avatar" />
-                            <div class="info">
-                                <strong>NodeJS <span>@NodeJS</span></strong>
-                                <button>Follow</button>
-                            </div>
-                        </div>
-                        <a href="">x</a>
-                    </li>
-                    <li>
-                        <div class="profile">
-                            <img src="/images/React.png" alt="Avatar" />
-                            <div class="info">
-                                <strong>ReactJS<span>@ReactJS</span></strong>
-                                <button>Follow</button>
-                            </div>
-                        </div>
-                        <a href="">x</a>
-                    </li>
-                    <li>
-                        <div class="profile">
-                            <img src="/images/React-Native.png" alt="Avatar" />
-                            <div class="info">
-                                <strong>React Native<span>@ReactNative</span></strong>
-                                <button>Follow</button>
-                            </div>
-                        </div>
-                        <a href="">x</a>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-
-        <aside class="toptrends">
-            <div class="trends">
-                <div class="trend">
-                    <div class="title">
-                        <strong>Trends</strong>
-                        <a href="">Change</a>
-                    </div>
-                    <ul>
-                        <li><span>#JavaScript</span></li>
-                        <li><span>#NodeJS</span></li>
-                        <li><span>#ReactJS</span></li>
-                        <li><span>#ReactNative</span></li>
-                        <li><span>#HTML</span></li>
-                        <li><span>#CSS</span></li>
-                        <li><span>#VueJS</span></li>
-                        <li><span>#TypeScript</span></li>
-                    </ul>
-                </div>
-            </div>
-        </aside>
     </div>
+    <!-- widget ends -->
+    
 </body>
-
 </html>
