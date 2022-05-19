@@ -375,6 +375,8 @@ body
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 400;
+    word-wrap: break-word;
+    max-width: 550px;
 }
 .post-image
 {

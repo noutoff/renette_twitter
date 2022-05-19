@@ -1,4 +1,6 @@
 
+
+before_posts = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,125 +115,9 @@
       </div>
 
       <!-- profile ends -->
+"""
 
-      <div class="post">
-        <div class="post-avatar">
-          <img src="images/renette.jpg" alt="">
-        </div>
-        <div class="post_body">
-          <div class="post-header">
-            <div class="post-header-username">
-              Renette and Charles
-              <span class="post-header-icon">
-                <span class="material-icons">verified</span>@renettethefrog
-              </span>
-            </div>
-          </div>
-          <div class="post-description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </div>
-          
-          <div class="post-options">
-	    
-	  </div>
-	  <div class="actions">
-            <a href=""><img src="./images/chat-round.svg" alt="Comments" /> 101</a>
-            <a href=""><img src="./images/refresh-69.svg" alt="Retweet" /> 59</a>
-            <a href=""><img src="./images/heart-2.svg" alt="Like" /> 25</a>
-            <a href=""><img src="./images/email-83.svg" alt="Email" /> 13</a>
-          </div>                    
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="post-avatar">
-          <img src="images/renette.jpg" alt="">
-        </div>
-        <div class="post_body">
-          <div class="post-header">
-            <div class="post-header-username">
-              Renette and Charles
-              <span class="post-header-icon">
-                <span class="material-icons">verified</span>@renettethefrog
-              </span>
-            </div>
-          </div>
-          <div class="post-description">
-            hello hello
-          </div>
-          
-<img class="post-image" src="images/frogcapy.webp" alt="">
-
-          <div class="post-options">
-	    
-	  </div>
-	  <div class="actions">
-            <a href=""><img src="./images/chat-round.svg" alt="Comments" /> 101</a>
-            <a href=""><img src="./images/refresh-69.svg" alt="Retweet" /> 59</a>
-            <a href=""><img src="./images/heart-2.svg" alt="Like" /> 25</a>
-            <a href=""><img src="./images/email-83.svg" alt="Email" /> 13</a>
-          </div>                    
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="post-avatar">
-          <img src="images/renette.jpg" alt="">
-        </div>
-        <div class="post_body">
-          <div class="post-header">
-            <div class="post-header-username">
-              Renette and Charles
-              <span class="post-header-icon">
-                <span class="material-icons">verified</span>@renettethefrog
-              </span>
-            </div>
-          </div>
-          <div class="post-description">
-            hello again
-          </div>
-          
-          <div class="post-options">
-	    
-	  </div>
-	  <div class="actions">
-            <a href=""><img src="./images/chat-round.svg" alt="Comments" /> 101</a>
-            <a href=""><img src="./images/refresh-69.svg" alt="Retweet" /> 59</a>
-            <a href=""><img src="./images/heart-2.svg" alt="Like" /> 25</a>
-            <a href=""><img src="./images/email-83.svg" alt="Email" /> 13</a>
-          </div>                    
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="post-avatar">
-          <img src="images/renette.jpg" alt="">
-        </div>
-        <div class="post_body">
-          <div class="post-header">
-            <div class="post-header-username">
-              Renette and Charles
-              <span class="post-header-icon">
-                <span class="material-icons">verified</span>@renettethefrog
-              </span>
-            </div>
-          </div>
-          <div class="post-description">
-            Hey I was born! Look at that!
-          </div>
-          
-          <div class="post-options">
-	    
-	  </div>
-	  <div class="actions">
-            <a href=""><img src="./images/chat-round.svg" alt="Comments" /> 101</a>
-            <a href=""><img src="./images/refresh-69.svg" alt="Retweet" /> 59</a>
-            <a href=""><img src="./images/heart-2.svg" alt="Like" /> 25</a>
-            <a href=""><img src="./images/email-83.svg" alt="Email" /> 13</a>
-          </div>                    
-        </div>
-      </div>
-
+after_posts = """
    </div>
     <!-- feed ends -->
     <!-- widget starts -->
@@ -298,3 +184,60 @@
     
 </body>
 </html>
+"""
+
+post_template = """
+      <div class="post">
+        <div class="post-avatar">
+          <img src="images/renette.jpg" alt="">
+        </div>
+        <div class="post_body">
+          <div class="post-header">
+            <div class="post-header-username">
+              Renette and Charles
+              <span class="post-header-icon">
+                <span class="material-icons">verified</span>@renettethefrog
+              </span>
+            </div>
+          </div>
+          <div class="post-description">
+            {text}
+          </div>
+          {img}
+          <div class="post-options">
+	    
+	  </div>
+	  <div class="actions">
+            <a href=""><img src="./images/chat-round.svg" alt="Comments" /> 101</a>
+            <a href=""><img src="./images/refresh-69.svg" alt="Retweet" /> 59</a>
+            <a href=""><img src="./images/heart-2.svg" alt="Like" /> 25</a>
+            <a href=""><img src="./images/email-83.svg" alt="Email" /> 13</a>
+          </div>                    
+        </div>
+      </div>
+"""
+
+post_image_template = """
+<img class="post-image" src="{img_src}" alt="">
+"""
+
+
+posts = [
+    ("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", ""),
+    ("hello hello", "images/frogcapy.webp"),
+    ("hello again", ""),
+    ("Hey I was born! Look at that!", "")
+]
+
+# TODO: add dates!
+
+if __name__ == "__main__":
+    html_src = before_posts
+    for text, img in posts:
+        if img:
+            html_src += post_template.format(text=text, img=post_image_template.format(img_src=img))
+        else:
+            html_src += post_template.format(text=text, img=img)
+    html_src += after_posts
+    with open("index.html", "w") as f:
+        f.write(html_src)
