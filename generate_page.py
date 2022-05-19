@@ -196,7 +196,7 @@ post_template = """
             <div class="post-header-username">
               Renette and Charles
               <span class="post-header-icon">
-                <span class="material-icons">verified</span>@renettethefrog
+                <span class="material-icons">verified</span>@renettethefrog · {date}
               </span>
             </div>
           </div>
@@ -223,21 +223,18 @@ post_image_template = """
 
 
 posts = [
-    ("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", ""),
-    ("hello hello", "images/frogcapy.webp"),
-    ("hello again", ""),
-    ("Hey I was born! Look at that!", "")
+    ("Hey I was born! Look at that!", "Desnus 23, 7172 AM", ""),
+    ('One of the grown-up gave me a big stick so I could start "learning the way of the bonk", whatever that means', "7175 AM", ""),
+    ()
 ]
-
-# TODO: add dates!
 
 if __name__ == "__main__":
     html_src = before_posts
-    for text, img in posts:
+    for text, date, img in posts:
         if img:
-            html_src += post_template.format(text=text, img=post_image_template.format(img_src=img))
+            html_src += post_template.format(text=text, img=post_image_template.format(img_src=img), date=date)
         else:
-            html_src += post_template.format(text=text, img=img)
+            html_src += post_template.format(text=text, img=img, date=date)
     html_src += after_posts
     with open("index.html", "w") as f:
         f.write(html_src)
