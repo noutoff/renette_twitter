@@ -145,7 +145,7 @@ after_posts = """
                <div class="profile">
 
                  <div class="info">
-		   <img src="images/frog-face.png" alt="Avatar" />
+		   <img src="images/jacques.png" alt="Avatar" />
                    <strong>Jaques Desorteils <br><span>@jaquesfrostbite</span></strong>
                  </div>
 		 <div><button>Follow</button></div>
@@ -155,8 +155,8 @@ after_posts = """
                <div class="profile">
 
                  <div class="info">
-		   <img src="images/frog-face.png" alt="Avatar" />
-                   <strong>Goblinwitch<br><span>@thegoblinwitch</span></strong>
+		   <img src="images/rizzie.png" alt="Avatar" />
+                   <strong>Rizzie<br><span>@rizziethewitch</span></strong>
                  </div>
 		 <div><button>Follow</button></div>
                </div>
@@ -235,7 +235,7 @@ posts = [
     ("Bonking with Charles is so fun! But I feel like we need to travel a bit, witness other bonking styles, or maybe even... other things than bonking?? (we've heard of some Dubonks going into sports?) In any case we're super excited to go on an adventure together!", "Lamashan 2, 7183 AM", ""),
     ("Well here we are in a very cool adventure! We were hired by a pirate lady to compete in a game against other... people? I'm not sure I got all the details but it sounds fun!", "Pharast 12, 7184 AM", ""),
     ("I'm working with a really cool kitty-person named Kant Trus, she's so smart and she likes money! Apparently her style is to miss a lot and then BOOM, hit very hard!", "Lamashan 2, 7183 AM", ""),
-    ("We've met with another team (I think we need to make friends with them?), they look really good! One of them looks familiar... and the other has a big cat!! And I think they new the Dubonk name? So nice that the Order of the Bonk is so popular! I need to ask them what their style is!", "Lamashan 2, 7183 AM", ""),
+    ("We've met with another team (I think we need to make friends with them?), they look really good! One of them looks familiar... and the other has a big cat!! And I think they knew the Dubonk name? So nice that the Order of the Bonk is so popular! I need to ask them what their style is!", "Lamashan 2, 7183 AM", ""),
 ]
 
 if __name__ == "__main__":
