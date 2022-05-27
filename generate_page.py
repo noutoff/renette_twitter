@@ -1,5 +1,4 @@
 
-
 before_posts = """
 <!DOCTYPE html>
 <html lang="en">
@@ -7,10 +6,10 @@ before_posts = """
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/124/124021.png"/>
     <title>Renette and Charles (@renettethefrog) / Ribbitter</title>
@@ -83,7 +82,7 @@ before_posts = """
 	</div>
       </div>
       <!-- banner ends -->
-      
+
       <!-- profile starts -->
       <div class="profile">
 	<div class="profile_body">
@@ -165,7 +164,7 @@ after_posts = """
            </ul>
 	   </div>
 	</div>
-	
+
         <div class="widget-container">
           <h3><b>Trends for you</b></h3>
 	  <div class="trend">
@@ -181,7 +180,7 @@ after_posts = """
 
     </div>
     <!-- widget ends -->
-    
+
 </body>
 </html>
 """
@@ -205,14 +204,14 @@ post_template = """
           </div>
           {img}
           <div class="post-options">
-	    
+
 	  </div>
 	  <div class="actions">
             <a href=""><img src="./images/chat-round.svg" alt="Comments" /> 101</a>
             <a href=""><img src="./images/refresh-69.svg" alt="Retweet" /> 59</a>
             <a href=""><img src="./images/heart-2.svg" alt="Like" /> 25</a>
             <a href=""><img src="./images/email-83.svg" alt="Email" /> 13</a>
-          </div>                    
+          </div>
         </div>
       </div>
 """
@@ -223,9 +222,20 @@ post_image_template = """
 
 
 posts = [
-    ("Hey I was born! Look at that!", "Desnus 23, 7172 AM", ""),
-    ('One of the grown-up gave me a big stick so I could start "learning the way of the bonk", whatever that means', "7175 AM", ""),
-    ()
+    ("Hi! I'm Renette Bloux Dubonk and I was just born today!", "Desnus 23, 7172 AM", ""),
+    ('One of the grown-up gave me a big stick so I could start "learning the way of the bonk", whatever that means', "Calistril 28 7175 AM", ""),
+    ("I've bonked things for a few months now, it's pretty fun. Now I have to sit through theoretical bonk lessons. I'm learning about the different style of bonking: melee bonking (very traditional), range bonking, magic bonking... It's pretty interesting!", "Neth 13, 7175 AM", ""),
+    ("My cousin Zoe Dabonk came to visit today, we had so much fun! She's a bit older so she's clearly more advanced in her bonk studies, but she still took the time to show me some stuff! She also told me scary stories about a moss witch leaving in the jungle that hates noise...", "Abadius 22, 7177 AM", "images/frogs.jpg"),
+    ("I've started going with the grown-ups on bonking expeditions! It's when we go in the jungle to bonk things so that they leave the village alone. I only bonked small creatures but it was nice getting some actual action!", "Gozran 4, 7179 AM", ""),
+    ("The others gave me a new bonking stick! It's a very good stick, I'll call it Maximo.", "Rova 14, 7179 AM", "images/hammer.webp"),
+    ("They keep saying that I need to find my bonking style, but I don't really now what to do. I can sense there's something missing. But what? Leaf got her dancing bonk, Olive got their random magic bonk, and all I got is Maximo... (sorry Maximo you're cool)", "Abadius 19, 7180 AM", ""),
+    ("Wow something incredible happened!!! I was", "Sarenith 15, 7180 AM", ""),
+    ("Sorry I was excited and sent to early. I was picking cool rocks for my collection (Hector is lonely), when I heard distressed noise in the bushes. A poor capybara was being attacked by a weird thing with lots of limbs (way too many limbs). Thankfully I had Maximo with me so I started bonking, traditional melee style. But then! The capybara just pushed me with his head so that I would fall on him, and two seconds later I was riding him!! And we charged!!! That was so cool.", "Sarenith 15, 7180 AM", ""),
+    ("So I came back to the village on the capybara and asked Josie to talk with him (she bonks using nature), and he said his name was Charles and that he thought we were making a great team and that he would love to continue bonking with me! So now I'm mounted bonking, wow!", "Sarenith 16, 7180 AM", "images/charles.jpg"),
+    ("Bonking with Charles is so fun! But I feel like we need to travel a bit, witness other bonking styles, or maybe even... other things than bonking?? (we've heard of some Dubonks going into sports?) In any case we're super excited to go on an adventure together!", "Lamashan 2, 7183 AM", ""),
+    ("Well here we are in a very cool adventure! We were hired by a pirate lady to compete in a game against other... people? I'm not sure I got all the details but it sounds fun!", "Pharast 12, 7184 AM", ""),
+    ("I'm working with a really cool kitty-person named Kant Trus, she's so smart and she likes money! Apparently her style is to miss a lot and then BOOM, hit very hard!", "Lamashan 2, 7183 AM", ""),
+    ("We've met with another team (I think we need to make friends with them?), they look really good! One of them looks familiar... and the other has a big cat!! And I think they new the Dubonk name? So nice that the Order of the Bonk is so popular! I need to ask them what their style is!", "Lamashan 2, 7183 AM", ""),
 ]
 
 if __name__ == "__main__":
